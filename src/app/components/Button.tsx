@@ -2,7 +2,7 @@ import React from "react"
 import Image from "next/image";
 import linkWhite from "@/../public/linkWhite.svg"
 type ButtonProps={
-    text:String;
+    text:string;
     variant:'primary'|'secondary';
 }
 
