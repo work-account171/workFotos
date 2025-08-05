@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
             </p>
 
             <div className="mt-8 sm:mt-10">
-              <Button text="Join WorkFotos" variant="primary" />
+              <Button text="Join WorkFotos" variant="primary" href="/"  />
             </div>
           </div>
         </div>
