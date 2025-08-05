@@ -15,6 +15,10 @@ export default function Navbar() {
           <Image src="/WorkFotos.png" alt="Logo" width={268} height={54} />
         </Link>
 
+    <>
+        <div className='bg-red-400'>WorkFotos Navbar</div>
+
+
         {/* Nav + Buttons Grouped Together */}
         <div className="flex items-center space-x-6 ml-auto">
           <nav className="hidden md:flex space-x-6 text-white text-[18px] font-medium">
