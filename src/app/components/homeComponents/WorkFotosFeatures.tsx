@@ -79,11 +79,8 @@ const WorkFotosFeatures: React.FC = () => {
           {features.map((feature, index) => (
             <div
               key={index}
-              className="relative group bg-white border border-gray-200 rounded-[12px] p-4 h-[181px] transition-all duration-300 hover:border-t-[#1e3a8a] hover:border-l-[#1e3a8a] hover:border-r-[#1e3a8a]"
+              className="relative group bg-white border border-gray-200 rounded-[12px] p-4 h-[220 px] md:h-[181px] transition-all duration-300 hover:border-t-[#1e3a8a] hover:border-b-8 hover:border-b-[#1e3a8a] hover:border-l-[#1e3a8a] hover:border-r-[#1e3a8a]"
             >
-              {/* Bottom pseudo-border */}
-              <div className="absolute -bottom-[6px] left-0 w-full h-[6px] bg-[#1e3a8a] rounded-b-[12px] opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-[-1]" />
-
               <div className="mb-12">
                 <Image
                   src={feature.iconPath}

@@ -3,9 +3,9 @@
 import React from "react";
 import Image from "next/image";
 
-const SmartFeaturesSection: React.FC = () => {
+const SmartFeatures: React.FC = () => {
   return (
-    <section className="py-16 px-4 md:px-20 relative overflow-visible">
+    <section className="py-16 px-4 md:px-20 relative overflow-visible bg-white">
       <div className="max-w-3xl mx-auto text-center mb-12 w-[550px]">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-800">
           Smart <span className="text-blue-600">Features</span> For Every Step
@@ -60,4 +60,4 @@ const SmartFeaturesSection: React.FC = () => {
   );
 };
 
-export default SmartFeaturesSection;
+export default SmartFeatures;
