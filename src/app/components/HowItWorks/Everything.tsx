@@ -3,6 +3,10 @@ import Image from "next/image"
 import dashboard from "@/../public/how-it-works/work2.svg"
 import PointService from "./pointsService"
 import point1 from "@/../public/how-it-works/point-1.svg"
+import point2 from "@/../public/how-it-works/point-2.svg"
+import point3 from "@/../public/how-it-works/point-3.svg"
+import point4 from "@/../public/how-it-works/point-4.svg"
+import point5 from "@/../public/how-it-works/point-5.svg"
 function Everything() {
     return (
         <>
@@ -19,8 +23,12 @@ function Everything() {
                         </p>
                     </div>
                     <Image src={dashboard} width={400} height={400} alt="dashboard image" className="w-full lg:h-[420px] md:h-[322px] h-[198px]"/>
-                    <div className="points flex flex-wrap">
+                    <div className="points flex flex-wrap md:justify-center lg:gap-6 gap-4 items-center">
                         <PointService imgSrc={point1} text="Jobsite photo organization"/>
+                        <PointService imgSrc={point2} text="Team & Task Tracking"/>
+                        <PointService imgSrc={point3} text="Estimate & Invoice"/>
+                        <PointService imgSrc={point4} text="Custom Branding"/>
+                        <PointService imgSrc={point5} text="Portfolio & Share Links"/>
 
                     </div>
                 </div>
