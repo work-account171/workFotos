@@ -19,13 +19,13 @@ const Faqs: React.FC<FaqsProps> = ({ question, answer }) => {
     return (
         <div
             onClick={FaqHandler}
-            className={`lg:py-6 lg:px-5 px-4 py-3.5 flex flex-col gap-4 max-w-[480px] transition-all duration-300 cursor-pointer 
+            className={`lg:py-6 lg:px-5 px-4 py-3.5 flex flex-col transition-all duration-300 cursor-pointer 
             ${openFaq
                 ? "border-t-4 border-t-primary rounded-tr-sm rounded-tl-sm"
                 : "border border-y-[rgba(30,58,138,0.2)]"} 
             shadow-[0_1_12px_rgba(85,142,212,0.05)]`}
         >
-            <div className="flex justify-between relative items-center">
+            <div className="flex justify-between relative  items-center">
                 <p className="text-xl text-black">{question}</p>
                 <Image
                     src={plus}
@@ -45,9 +45,9 @@ const Faqs: React.FC<FaqsProps> = ({ question, answer }) => {
 
             <div
                 className={`overflow-hidden transition-all duration-500 ease-in-out 
-                ${openFaq ? "max-h-[500px] opacity-100 mt-2" : "max-h-0 opacity-0"}`}
+                ${openFaq ? "max-h-[400px] opacity-100 mt-2" : "max-h-0 opacity-0"}`}
             >
-                <p className="text-lg text-left text-black">{answer}</p>
+                <p className="text-lg text-left text-black pt-4">{answer}</p>
             </div>
         </div>
     );

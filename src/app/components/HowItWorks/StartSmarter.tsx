@@ -1,9 +1,11 @@
 'use client'
 import React, { useState } from 'react'
 import SmarterCard from './SmarterCard'
+import Image from 'next/image'
 import Card1 from "@/../public/how-it-works/card-1.svg"
 import Card2 from "@/../public/how-it-works/card-2.svg"
 import Card3 from "@/../public/how-it-works/card-3.svg"
+import layer from "@/../public/layer-bg.svg"
 function StartSmarter() {
     const [activeIndex, setActiveIndex] = useState(0);
     const items = [
@@ -29,7 +31,11 @@ function StartSmarter() {
     ]
     return (
         <>
-            <div className="m-auto md:w-[87%] w-[90%] max-w-[1240px] lg:py-[150px] md:py-[100px] py-16 flex flex-col gap-[34px]">
+            <div className="m-auto relative md:w-[87%] w-[90%] max-w-[1240px] overflow-hidden lg:py-[150px] md:py-[100px] py-16 flex flex-col gap-[34px]">
+                <Image src={layer} width="669" alt="detail image" height="446" className='absolute top-0 z-0 -right-28'/>
+                <Image src={layer} width="669" alt="detail image" height="446" className='absolute top-0 z-0 -left-28 '/>
+                <Image src={layer} width="669" alt="detail image" height="446" className='absolute bottom-0 z-0 -right-28 '/>
+                <Image src={layer} width="669" alt="detail image" height="446" className='absolute -bottom-28 z-0 -left-28 '/>
                 <div className="flex flex-col gap-12">
                     <div className="inline-flex flex-col  items-center gap-5 relative text-4xl font-semibold font-inter text-center text-black">
                         <p className="relative w-fit lg:text-5xl md:text-4xl text-[28px]">
