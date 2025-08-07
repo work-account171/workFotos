@@ -1,28 +1,29 @@
 import Image from 'next/image';
+import Button from './Button';
 
 const Footer = () => {
   return (
   <footer className="relative bg-white pt-32">
        <div
-      className="absolute -top-5 left-1/2 transform -translate-x-1/2 w-[90%] max-w-[1100px] bg-blue-700 bg-[url('/your-bg-image.jpg')] bg-cover bg-center rounded-2xl text-white p-10 flex flex-col lg:flex-row items-center justify-between shadow-xl z-10"
+      className="absolute -top-5 left-1/2 transform  -translate-x-1/2 w-[87%] px-[54px]  max-w-[1100px] border bg-center bg-fixed bg-no-repeat bg-[url('/footerBg.svg')]  rounded-2xl text-white  flex flex-col lg:flex-row items-start justify-between shadow-lg z-10"
     >
       {/* Left: Image */}
-      <div className="text-center lg:text-left flex-1">
-        <h2 className="text-2xl lg:text-3xl font-bold mb-3 leading-snug">
+      <div className="text-center py-[48px] lg:text-left flex-1">
+        <h2 className="md:text-[36px] text-md lg:text-4xl font-bold mb-3 leading-snug">
           Ready To Organize Your <br /> Photos In A Smarter Way?
         </h2>
         <p className="text-sm text-blue-100 mb-4">
           Start sorting and sharing with ease — all available in one place.
         </p>
-        <button className="bg-white text-blue-700 font-semibold px-6 py-2 rounded-full hover:bg-gray-100 transition text-sm">
-          Get Started Free
-        </button>
+          <Button text="Get Started Free" variant="secondary" href="/contact"  />
+
       </div>
-        <div className="relative w-50 h-50 lg:w-40 lg:h-40 mb-6 lg:mb-0 lg:mr-8 flex-shrink-0">
+        <div className="relative w-[35%] pt-6 h-auto ">
         <Image
           src="/Footer img.png" 
           alt="Organize"
-          fill
+          width={333}
+          height={313}
           className="object-cover shadow-lg"
           priority
         />

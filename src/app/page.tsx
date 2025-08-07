@@ -8,12 +8,14 @@ import faqImage from "@/../public/faqImg.svg"
 export default function Home() {
   return (
    <>
+   <div className="flex-col gap-0 overflow-hidden">
    <HeroSection/>
    <HowitWorks/>
    <SmartFeatures/>
    <WorkFotosFeatures/>
    {/* <TestimonialSlider/> */}
    <FaqsSection imgSrc={faqImage}/>
+   </div>
  
 
    </>

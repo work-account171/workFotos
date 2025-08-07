@@ -9,7 +9,7 @@ type FaqsSectionProps={
 const FaqsSection:React.FC<FaqsSectionProps>=({imgSrc})=> {
     return (
         <>
-            <div className="m-auto md:w-[87%] w-[90%] max-w-[1240px] lg:pb-[150px] md:pb-[100px] pb-16 flex justify-center md:justify-between items-center">
+            <div className="m-auto md:w-[87%] overflow-hidden w-[90%] max-w-[1240px] lg:pb-[150px] md:pb-[100px] pb-16 flex justify-center md:justify-between items-center">
                 <div className="flex flex-col md:w-[48%] w-full lg:gap-16 md:gap-12 gap-7">
                     <div className="max-w-[503px]">
                         <p className="font-bold text-transparent lg:text-5xl md:text-4xl text-[28px] leading-[normal]">

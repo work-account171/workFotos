@@ -52,7 +52,7 @@ const features: Feature[] = [
 
 const WorkFotosFeatures: React.FC = () => {
   return (
-    <section className="w-full py-20 bg-white">
+    <section className="w-full bg-white lg:pb-[150px] md:pb-[100px] pb-[64px]">
       <div className="max-w-[1240px] w-[87%] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="flex-1 max-w-[510px] w-full">
           <span className="inline-flex items-center gap-2 px-4 py-1 text-sm font-medium bg-[#1e3a8a] text-white rounded-full mb-4">

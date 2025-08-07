@@ -6,13 +6,13 @@ import Image from 'next/image';
 const HowitWorks: React.FC = () => {
   return (
     <section className='bg-white'>
-      <div className="w-[87%] max-w-[1240px] mx-auto pt-[64px] md:pt-[100px] lg:pt-[150px] pb-[100px] flex flex-col items-center text-center gap-[64px]">
+      <div className="md:w-[87%] w-[90%] overflow-hidden max-w-[1240px] mx-auto pt-[64px] md:pt-[100px] lg:pt-[150px]  flex flex-col items-center text-center lg:gap-[64px] md:gap-[48px] gap-[28px]">
        
-        <div className="flex flex-col gap-6">
-          <h1 className="text-3xl md:text-5xl text-center text-black font-bold leading-snug">
+        <div className="flex flex-col lg:gap-6 md:gap-5 gap-4">
+          <h1 className="text-2xl md:text-4xl lg:text-5xl text-center text-black font-bold leading-snug">
             How WorkFotos <span className="text-primary">Works</span>
           </h1>
-          <h2 className="font-light text-lg md:text-xl text-black">
+          <h2 className="font-light lg:text-lg md:text-[16px] text-sm md:text-xl text-black">
             Simplify your workflow in just three steps
           </h2>
         </div>
@@ -22,7 +22,7 @@ const HowitWorks: React.FC = () => {
          {/* div 1 */}
           <div className="relative w-full flex justify-center items-center  md:w-[47%] ">
            
-            <div className=" w-[238px] h-[491px]  transform -rotate-[6deg]   z-10 transition-all duration-500 group-hover:rotate-0 group-hover:-translate-x-[0px]">
+            <div className=" lg:w-[238px] lg:h-[491px] w-[153px] h-[313px]  transform -rotate-[6deg]   z-10 transition-all duration-500 group-hover:rotate-0 group-hover:-translate-x-[0px]">
               <Image
                 src="/Mobile 2.png"
                 alt="Phone Left"
@@ -32,7 +32,7 @@ const HowitWorks: React.FC = () => {
               />
             </div>
             {/* Right Image */}
-            <div className=" w-[238px] h-[491px]  transform rotate-[6deg]   z-20 transition-all duration-500 group-hover:rotate-0 group-hover:translate-x-[0px]">
+            <div className=" lg:w-[238px] lg:h-[491px] w-[153px] h-[313px]  transform rotate-[6deg]   z-20 transition-all duration-500 group-hover:rotate-0 group-hover:translate-x-[0px]">
               <Image
                 src="/Mobile.png"
                 alt="Phone Right"
@@ -44,10 +44,10 @@ const HowitWorks: React.FC = () => {
           </div>
 
           {/* Steps List div2*/}
-          <div className="w-full md:w-[46%]   space-y-8 text-left">
-            <div className="flex items-start  gap-4">
-              <Image src="/icons/Folder.png" alt="Create" width={32} height={32} />
-              <div>
+          <div className="w-full md:w-[46%] flex flex-col lg:gap-6 md:gap-5 gap-4 text-left">
+            <div className="flex items-start  lg:gap-6 md:gap-5 gap-4">
+              <Image src="/icons/Folder.png" alt="Create" width={32} height={32} className='lg:w-[48px] lg:h-[48px] w-[40px] h-[40px]' />
+              <div className='flex flex-col lg:gap-4 gap-3 md:gap-3.5'>
                 <h3 className="text-lg font-semibold text-black">Create Projects</h3>
                 <p className="text-black text-sm">
                   Start by adding a job using the address or client name — simple and organized from the start.
@@ -55,9 +55,9 @@ const HowitWorks: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <Image src="/icons/Upload.png" alt="Upload" width={32} height={32} />
-              <div>
+            <div className="flex items-start lg:gap-6 md:gap-5 gap-4 ">
+              <Image src="/icons/Upload.png" alt="Upload" width={32} height={32} className='lg:w-[48px] lg:h-[48px] w-[40px] h-[40px]'/>
+              <div className='flex flex-col lg:gap-4 gap-3 md:gap-3.5'>
                 <h3 className="text-lg font-semibold text-black">Upload & Track</h3>
                 <p className="text-black text-sm">
                   Add jobsite photos, write notes, and keep progress visible all in one place.
@@ -65,9 +65,9 @@ const HowitWorks: React.FC = () => {
               </div>
             </div>
 
-            <div className="flex items-start gap-4">
-              <Image src="/icons/Share.png" alt="Share" width={32} height={32} />
-              <div>
+            <div className="flex items-start lg:gap-6 md:gap-5 gap-4 ">
+              <Image src="/icons/Share.png" alt="Share" width={32} height={32} className='lg:w-[48px] lg:h-[48px] w-[40px] h-[40px]'/>
+              <div className='flex flex-col lg:gap-4 gap-3 md:gap-3.5'>
                 <h3 className="text-lg font-semibold text-black">Share or Showcase</h3>
                 <p className="text-black text-sm">
                   Keep everyone updated or impress potential clients by showcasing your best work.
