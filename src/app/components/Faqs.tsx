@@ -19,7 +19,7 @@ const Faqs: React.FC<FaqsProps> = ({ question, answer }) => {
     return (
         <div
             onClick={FaqHandler}
-            className={`lg:py-6 lg:px-5 px-4 py-3.5 flex flex-col transition-all duration-300 cursor-pointer 
+            className={`lg:py-6 lg:px-5 px-4 py-3.5 flex flex-col transition-all duration-300 cursor-pointer bg-white
             ${openFaq
                 ? "border-t-4 border-t-primary rounded-tr-sm rounded-tl-sm"
                 : "border border-y-[rgba(30,58,138,0.2)]"} 
