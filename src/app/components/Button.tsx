@@ -36,7 +36,7 @@ const Button: React.FC<LinkProps> = ({ text, variant, href, target = '_self', re
             href={href}
             target={target}
             rel={rel}
-            className="text-center justify-start sm:text-[16px] text-[14px]   font-semibold w-fit md:px-5 md:py-4 py-3 px-4   bg-blue-700 md:rounded-2xl sm:rounded-xl rounded-lg shadow-[0px_2px_15px_0px_rgba(0,0,0,0.20)] outline-2 outline-offset-[-2px] outline-blue-600 hover:[&>img]:rotate-45 inline-flex items-center gap-2.5" 
+            className="text-center justify-start sm:text-[16px] text-[14px] hover:shadow-[0_2_15px_rgba(0,0,0,0.2)]  font-semibold w-fit md:px-5 md:py-4 py-3 px-4 hover:bg-secondary  bg-primary md:rounded-2xl sm:rounded-xl rounded-lg shadow-[0px_2px_15px_0px_rgba(0,0,0,0.20)] outline-2 outline-offset-[-2px] outline-blue-600 hover:[&>img]:rotate-45 inline-flex items-center gap-2.5" 
             style={variant === "primary" ? styles.primary : styles.secondary} 
             onClick={handleClick}
         >
@@ -48,7 +48,7 @@ const Button: React.FC<LinkProps> = ({ text, variant, href, target = '_self', re
                         alt="white arrow" 
                         width={10} 
                         height={10} 
-                        className={`w-5 h-5 ${isClicked ? 'rotate-45' : ''}`}
+                        className={`w-5 h-5 transition-transform duration-300 ease-in-out ${isClicked ? 'rotate-45' : ''}`}
                     />
                 ) : (
                     <Image 
@@ -56,7 +56,7 @@ const Button: React.FC<LinkProps> = ({ text, variant, href, target = '_self', re
                         alt="black arrow" 
                         width={10} 
                         height={10} 
-                        className={`w-5 h-5 ${isClicked ? 'rotate-45' : ''}`}
+                        className={`w-5 h-5 transition-transform duration-300 ease-in-out ${isClicked ? 'rotate-45' : ''}`}
                     />
                 )
             }

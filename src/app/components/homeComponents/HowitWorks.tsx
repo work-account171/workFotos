@@ -6,7 +6,7 @@ import Image from 'next/image';
 const HowitWorks: React.FC = () => {
   return (
     <section className='bg-white'>
-      <div className="w-[87%] max-w-[1440px] px-6 mx-auto pt-[64px] md:pt-[100px] lg:pt-[150px] pb-[100px] flex flex-col items-center text-center gap-[64px]">
+      <div className="w-[87%] max-w-[1240px] px-6 mx-auto pt-[64px] md:pt-[100px] lg:pt-[150px] pb-[100px] flex flex-col items-center text-center gap-[64px]">
        
         <div className="flex flex-col gap-6">
           <h1 className="text-3xl md:text-5xl text-center text-black font-bold leading-snug">
@@ -18,11 +18,11 @@ const HowitWorks: React.FC = () => {
         </div>
 
        
-        <div className="flex flex-col md:flex-row items-center justify-between gap-6 md:gap-40 group">
+        <div className="flex flex-col  md:flex-row bg-red-400 items-center justify-between gap-6 md:gap-80 group">
          
-          <div className="relative w-full max-w-[350px] h-[350px] md:h-[375px]">
+          <div className="relative bg-blue-400 w-full  md:w-[47%] md:h-[375px]">
            
-            <div className="absolute inset-0 transform -rotate-[6deg] -translate-x-[40px] md:-translate-x-[90px] z-10 transition-all duration-500 group-hover:rotate-0 group-hover:-translate-x-[90px]">
+            <div className="absolute w-[238px] h-[491px] inset-0 transform -rotate-[6deg] -translate-x-[40px] md:-translate-x-[90px] z-10 transition-all duration-500 group-hover:rotate-0 group-hover:-translate-x-[90px]">
               <Image
                 src="/Mobile 2.png"
                 alt="Phone Left"
@@ -32,7 +32,7 @@ const HowitWorks: React.FC = () => {
               />
             </div>
             {/* Right Image */}
-            <div className="absolute inset-0 transform rotate-[6deg] translate-x-[40px] md:translate-x-[90px] z-20 transition-all duration-500 group-hover:rotate-0 group-hover:translate-x-[90px]">
+            <div className="absolute w-[238px] h-[491px] inset-0 transform rotate-[6deg] translate-x-[40px] md:translate-x-[90px] z-20 transition-all duration-500 group-hover:rotate-0 group-hover:translate-x-[90px]">
               <Image
                 src="/Mobile.png"
                 alt="Phone Right"
@@ -44,7 +44,7 @@ const HowitWorks: React.FC = () => {
           </div>
 
           {/* Steps List */}
-          <div className="w-full max-w-full space-y-8 text-left">
+          <div className="md:w-full w-[47%] max-w-full space-y-8 text-left">
             <div className="flex items-start gap-4">
               <Image src="/icons/Folder.png" alt="Create" width={32} height={32} />
               <div>
