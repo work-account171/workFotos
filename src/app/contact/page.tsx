@@ -8,17 +8,17 @@ function contact() {
       <div className="lg:py-[120px] md:pt-[82px] md:pb-[120px] py-[64px] md:w-[87%] w-[90%] max-w-[1240px] m-auto flex md:flex-row flex-col justify-between items-center ">
         <div className="max-w-[503px] md:w-[45%] w-full flex flex-col lg:gap-11 md:gap-[34px] gap-7">
           <h2 className="font-bold text-transparent  lg:text-4xl  md:text-[28px] text-2xl  text-[28px] leading-[normal]">
-            <span className="text-black">Need Help? We’re Just </span>
+            <span className="text-black">Need Help? We &apos; re Just </span>
             <span className="text-blue-600"> a Message Away</span>
           </h2>
           <div className="flex flex-col lg:gap-4 md:gap-3.5 gap-3">
             <p className="lg:text-xl md:text-[16px] text-sm text-black">
-              Whether you're managing a busy construction site, running a
+              Whether you &apos; re managing a busy construction site, running a
               growing service business, or just exploring what WorkFotos can do,
-              we're here to help.
+              we&apos;re here to help.
             </p>
             <p className="lg:text-xl md:text-[16px] text-sm text-black">
-              Drop us a message and we’ll get back to you within 24 hours.
+              Drop us a message and we&apos;ll get back to you within 24 hours.
             </p>
           </div>
         </div>
