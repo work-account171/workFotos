@@ -3,9 +3,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import hamburgerIcon from "@/../public/hamburger.svg";
+import cross from "@/../public/cross.svg";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [sidebar,setSidebar]=useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,12 +29,14 @@ export default function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-colors duration-300 ${
-        scrolled ? "bg-white shadow-md border-b border-gray-200" : "bg-transparent border-b border-white/10"
+      className={`fixed overflow-hidden  top-0 left-0 w-full z-50 transition-colors duration-300 ${
+        scrolled
+          ? "bg-white shadow-md border-b border-gray-200"
+          : "bg-transparent border-b border-white/10"
       }`}
       style={{ backdropFilter: scrolled ? "none" : "blur(16px)" }}
     >
-      <div className="w-[87%] max-w-[1240px] mx-auto flex items-center justify-between h-[100px] md:gap-8 transition-colors duration-300">
+      <div className="md:w-[87%] w-[90%] max-w-[1240px] mx-auto flex items-center justify-between lg:py-6 py-4 md:gap-8 transition-colors duration-300">
         {/* Logo */}
         <Link href="/" className="flex items-start">
           <Image
@@ -40,13 +45,14 @@ export default function Navbar() {
             width={268}
             height={54}
             priority
+            className="md:w-[218px] md:h-[44px] lg:w-[268px] lg:h-[54px] w-[139px] h-[28px]"
           />
         </Link>
 
         {/* Navigation */}
-        <div className="flex items-center space-x-6 ml-auto">
+        <div className="lg:flex md:hidden items-center space-x-6 ml-auto">
           <nav
-            className={`hidden md:flex space-x-6 text-[18px] font-medium transition-colors duration-300 ${
+            className={`hidden lg:flex space-x-6 text-[18px] font-medium transition-colors duration-300 ${
               scrolled ? "text-black" : "text-white"
             }`}
           >
@@ -54,27 +60,89 @@ export default function Navbar() {
             <Link href="/pricing">Pricing</Link>
             <Link href="/contact">Contact</Link>
           </nav>
+          <div className="lg:flex flex-row hidden gap-3">
+            <Link
+              href="/login"
+              className={`py-2 px-4 rounded-full text-sm border transition-all duration-300 ${
+                scrolled ? "border-black text-black" : "border-white text-white"
+              }`}
+            >
+              Member Login
+            </Link>
+            <Link
+              href="/signup"
+              className={`py-2 px-4 rounded-full text-sm transition-colors duration-300 ${
+                scrolled
+                  ? "bg-blue-600 text-white hover:bg-blue-700"
+                  : "bg-blue-600 text-white hover:bg-blue-700"
+              }`}
+            >
+              Join Today
+            </Link>
+          </div>
+          
+        </div>
+        <Image
+            src={hamburgerIcon}
+            alt="hamburger icon"
+            width={19}
+            height={19}
+            className="lg:hidden block"
+                    onClick={() => setSidebar(true)}
 
-          <Link
-            href="/login"
-            className={`py-2 px-4 rounded-full text-sm border transition-all duration-300 ${
-              scrolled
-                ? "border-black text-black"
-                : "border-white text-white"
-            }`}
-          >
-            Member Login
-          </Link>
-          <Link
-            href="/signup"
-            className={`py-2 px-4 rounded-full text-sm transition-colors duration-300 ${
-              scrolled
-                ? "bg-blue-600 text-white hover:bg-blue-700"
-                : "bg-blue-600 text-white hover:bg-blue-700"
-            }`}
-          >
-            Join Today
-          </Link>
+          />
+      </div>
+      <div className={`fixed top-0 right-0 h-screen w-[75%] bg-white z-50 px-6 pt-[20px] pb-[100px] flex flex-col gap-24 transform transition-transform duration-300 ease-in-out ${
+          sidebar ? 'translate-x-0' : 'translate-x-full'
+        }`}>
+        <div className="flex flex-col gap-24">  
+          <div className="flex justify-between items-center">
+            <Image
+              src={"/Black logo.png"} 
+              alt="logo"
+              width={268}
+              height={54}
+              priority
+              className="w-[139px] md:w-[219px] md:h-[44px] h-[28px]"
+            />
+            <Image
+              src={cross}
+              alt="cross icon"
+              width={19}
+              height={19}
+              className="lg:hidden block"
+              onClick={() => setSidebar(false)}
+            />
+          </div>
+          <div className="flex flex-col h-[70vh] items-between justify-between">
+
+          <nav
+            className="flex flex-col gap-5 text-[18px] font-medium transition-colors duration-300 text-black"
+            >
+            <Link href="/how-it-works">How it Works</Link>
+            <Link href="/pricing">Pricing</Link>
+            <Link href="/contact">Contact</Link>
+          </nav>
+          <div className="flex flex-col gap-3">
+            <Link
+              href="/login"
+              className="py-2 px-4 rounded-full text-sm text-center border transition-all duration-300 border-black text-black"
+              
+            >
+              Member Login
+            </Link>
+            <Link
+              href="/signup"
+              className={`py-2 px-4 rounded-full text-center text-sm transition-colors duration-300 ${
+                scrolled
+                  ? "bg-blue-600 text-white hover:bg-blue-700"
+                  : "bg-blue-600 text-white hover:bg-blue-700"
+              }`}
+            >
+              Join Today
+            </Link>
+          </div>
+            </div>
         </div>
       </div>
     </header>

@@ -18,11 +18,11 @@ const HowitWorks: React.FC = () => {
         </div>
 
        
-        <div className="flex flex-col  md:flex-row items-center w-full justify-between gap-6 md:gap-80 group">
-         
-          <div className="relative w-full  md:w-[47%] md:h-[491px] bg-blue-500">
+        <div className="flex flex-col  md:flex-row items-center w-full justify-between gap-6  group">
+         {/* div 1 */}
+          <div className="relative w-full flex justify-center items-center  md:w-[47%] ">
            
-            <div className="absolute w-[238px] h-[491px] inset-0 transform -rotate-[6deg] -translate-x-[40px] md:-translate-x-[20px] z-10 transition-all duration-500 group-hover:rotate-0 group-hover:-translate-x-[90px]">
+            <div className=" w-[238px] h-[491px]  transform -rotate-[6deg]   z-10 transition-all duration-500 group-hover:rotate-0 group-hover:-translate-x-[0px]">
               <Image
                 src="/Mobile 2.png"
                 alt="Phone Left"
@@ -32,7 +32,7 @@ const HowitWorks: React.FC = () => {
               />
             </div>
             {/* Right Image */}
-            <div className="absolute w-[238px] h-[491px] inset-0 transform rotate-[6deg] translate-x-[40px] md:translate-x-[20px] z-20 transition-all duration-500 group-hover:rotate-0 group-hover:translate-x-[90px]">
+            <div className=" w-[238px] h-[491px]  transform rotate-[6deg]   z-20 transition-all duration-500 group-hover:rotate-0 group-hover:translate-x-[0px]">
               <Image
                 src="/Mobile.png"
                 alt="Phone Right"
@@ -43,9 +43,9 @@ const HowitWorks: React.FC = () => {
             </div>
           </div>
 
-          {/* Steps List */}
-          <div className="w-full md:w-[47%]  space-y-8 text-left">
-            <div className="flex items-start gap-4">
+          {/* Steps List div2*/}
+          <div className="w-full md:w-[46%]   space-y-8 text-left">
+            <div className="flex items-start  gap-4">
               <Image src="/icons/Folder.png" alt="Create" width={32} height={32} />
               <div>
                 <h3 className="text-lg font-semibold text-black">Create Projects</h3>
