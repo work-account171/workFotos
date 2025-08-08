@@ -35,7 +35,7 @@ function FormContainer() {
   };
   return (
     <>
-      <div className=" relative lg:py-[120px]  md:pt-[82px] md:pb-[120px] py-[64px] md:w-[87%] w-[90%] max-w-[1240px] m-auto flex md:flex-row flex-col justify-start items-start gap-[34px] md:justify-between md:items-center ">
+      <div className=" relative lg:py-[120px] overflow-hidden  md:pt-[82px] md:pb-[120px] py-[64px] md:w-[87%] w-[90%] max-w-[1240px] m-auto flex md:flex-row flex-col justify-start items-start gap-[34px] md:justify-between md:items-center ">
         <Image
           src={layer}
           width="669"
