@@ -32,7 +32,7 @@ export default function Navbar() {
       className={`fixed overflow-visible  top-0 left-0 w-full z-50 transition-colors duration-300 ${
         scrolled
           ? "bg-white shadow-md border-b border-gray-200"
-          : "bg-transparent border-b border-white/10"
+          : "md:bg-transparent bg-white border-b border-white/10"
       }`}
       style={{ backdropFilter: scrolled ? "none" : "blur(16px)" }}
     >
