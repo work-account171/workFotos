@@ -10,7 +10,7 @@ import point5 from "@/../public/how-it-works/point-5.svg"
 function Everything() {
     return (
         <>
-            <div className=" py-11 md:py-16 lg:py-[100px] text-center bg-[url('/bg2.svg')]  bg-cover bg-center bg-no-repeat">
+            <div className=" py-11 bg-white md:py-16 lg:py-[100px] text-center bg-[url('/bg2.svg')]  bg-cover bg-center bg-no-repeat">
                 <div className="w-[87%] max-w-[1240px] flex flex-col lg:gap-16 md:gap-12 gap-5  mx-auto">
                     <div className="flex flex-col mx-auto max-w-[854px] items-center md:gap-6 gap-4 text-white font-bold relative">
                         <p className=" w-fit lg:text-5xl md:text-4xl text-[28px]/8">

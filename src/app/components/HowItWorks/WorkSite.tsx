@@ -9,7 +9,7 @@ import ImgVid4 from "@/../public/how-it-works/imgvid4.svg"
 function WorkSite() {
     return (
         <>
-            <div className="py-16 md:w-[87%] w-[90%]  max-w-[1240px] md:py-[100px] m-auto lg:py-[150px] overflow-hidden">
+            <div className="py-16 md:w-[87%] bg-white w-[90%]  max-w-[1240px] md:py-[100px] m-auto lg:py-[150px] overflow-hidden">
                 <div className="flex flex-col gap-9 md:gap-12 lg:gap-16 justify-center items-center">
                     <div className="inline-flex flex-col  items-center gap-5 relative text-4xl font-semibold font-inter text-center text-black">
                         <p className="relative w-fit lg:text-5xl md:text-4xl text-[28px]">

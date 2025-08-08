@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const SmartFeatures: React.FC = () => {
   return (
-    <section className="lg:py-[150px] md:py-[100px] py-[64px]   w-[90%] md:w-[87%] mx-auto relative overflow-hidden ">
+    <section className="lg:py-[150px] bg-white md:py-[100px] py-[64px]   w-[90%] md:w-[87%] mx-auto relative overflow-hidden ">
       <div className=" mx-auto text-center mb-12 max-w-[550px]">
         <h1 className="text-2xl lg:text-5xl md:text-[36px] font-bold text-gray-800">
           Smart <span className="text-blue-600">Features</span> For Every Step

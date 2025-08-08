@@ -31,7 +31,7 @@ function StartSmarter() {
     ]
     return (
         <>
-            <div className="m-auto relative md:w-[87%] w-[90%] max-w-[1240px] overflow-hidden lg:py-[150px] md:py-[100px] py-16 flex flex-col gap-[34px]">
+            <div className="m-auto bg-white relative md:w-[87%] w-[90%] max-w-[1240px] overflow-hidden lg:py-[150px] md:py-[100px] py-16 flex flex-col gap-[34px]">
                 <Image src={layer} width="669" alt="detail image" height="446" className='absolute top-0 z-0 -right-28'/>
                 <Image src={layer} width="669" alt="detail image" height="446" className='absolute top-0 z-0 -left-28 '/>
                 <Image src={layer} width="669" alt="detail image" height="446" className='absolute bottom-0 z-0 -right-28 '/>

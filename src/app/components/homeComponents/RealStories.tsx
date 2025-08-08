@@ -43,7 +43,7 @@ const handlePrev = () => {
   
 
   return (
-    <div className="md:w-[87%] w-[90%] lg:pb-[150px] md:pb-[100px] pb-[64px]  text-center flex items-center justify-center">
+    <div className="md:w-[87%] bg-white w-[90%] lg:pb-[150px] md:pb-[100px] pb-[64px]  text-center flex items-center justify-center">
       <div className="max-w-6xl w-full">
         {/* Header */}
         <div className="text-center lg:mb-16 md:mb-12 mb-8 lg:max-w-[704px] max-w-[342px] mx-auto">
