@@ -74,7 +74,7 @@ function FormContainer() {
             </div>
           )}
           <form
-            className="bg-white md:py-5 md:px-6 rounded-lg  flex flex-col lg:gap-6 md:gap-5 py-4 px-5 gap-4 "
+            className="bg-white border border-gray-400 md:py-5 md:px-6 rounded-lg  flex flex-col lg:gap-6 md:gap-5 py-4 px-5 gap-4 "
             onSubmit={handleFormSubmit}
           >
             <div className="flex flex-col gap-1.5">
@@ -131,7 +131,7 @@ function FormContainer() {
             </div>
             <button
               type="submit"
-              className="bg-primary hover:shadow-[0_2_15px_rgba(0,0,0,0.2)] group rounded-xl py-3.5 px-5 text-[16px] font-semibold flex gap-3.5 justify-center items-center "
+              className="bg-primary text-white hover:shadow-[0_2_15px_rgba(0,0,0,0.2)] group rounded-xl py-3.5 px-5 text-[16px] font-semibold flex gap-3.5 justify-center items-center "
             >
               Join WorkFotos
               <Image

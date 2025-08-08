@@ -104,6 +104,7 @@ export default function Navbar() {
               height={54}
               priority
               className="w-[139px] md:w-[219px] md:h-[44px] h-[28px]"
+              onClick={() => setSidebar(false)}
             />
             <Image
               src={cross}
@@ -119,9 +120,9 @@ export default function Navbar() {
           <nav
             className="flex flex-col gap-5 text-[18px] font-medium transition-colors duration-300 text-black"
             >
-            <Link href="/how-it-works">How it Works</Link>
-            <Link href="/pricing">Pricing</Link>
-            <Link href="/contact">Contact</Link>
+            <Link href="/how-it-works" onClick={() => setSidebar(false)}>How it Works</Link>
+            <Link href="/pricing" onClick={() => setSidebar(false)}>Pricing</Link>
+            <Link href="/contact" onClick={() => setSidebar(false)}>Contact</Link>
           </nav>
           <div className="flex flex-col gap-3">
             <Link
