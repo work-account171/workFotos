@@ -22,11 +22,11 @@ const Faqs: React.FC<FaqsProps> = ({ question, answer }) => {
             className={`lg:py-6 lg:px-5 px-4 py-3.5 flex flex-col transition-all duration-300 cursor-pointer bg-white
             ${openFaq
                 ? "border-t-4 border-t-primary rounded-tr-sm rounded-tl-sm"
-                : "border border-y-[rgba(30,58,138,0.2)]"} 
+                : "border border-y-[rgba(30,58,138,0.2)] border-x-0"} 
             shadow-[0_1_12px_rgba(85,142,212,0.05)]`}
         >
             <div className="flex justify-between relative  items-center">
-                <p className="text-xl text-black">{question}</p>
+                <p className="md:text-xl text-[16px] text-black">{question}</p>
                 <Image
                     src={plus}
                     alt="plus icon"
@@ -47,7 +47,7 @@ const Faqs: React.FC<FaqsProps> = ({ question, answer }) => {
                 className={`overflow-hidden transition-all duration-500 ease-in-out 
                 ${openFaq ? "max-h-[400px] opacity-100 mt-2" : "max-h-0 opacity-0"}`}
             >
-                <p className="text-lg text-left text-black pt-4">{answer}</p>
+                <p className="md:text-lg text-sm text-left text-black pt-4">{answer}</p>
             </div>
         </div>
     );
