@@ -8,7 +8,7 @@ type FaqsSectionProps = {
 
 const FaqsSectionpricing: React.FC<FaqsSectionProps> = ({ imgSrc }) => {
   return (
-    <div className="relative m-auto md:w-[87%] w-[90%] max-w-[1240px] lg:pb-[150px] md:pb-[100px] pb-16 flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
+    <div className="relative m-auto md:w-[87%] w-[90%] max-w-[1240px] lg:pb-[150px] md:pb-[100px] pb-16 pt-15 flex flex-col-reverse md:flex-row justify-center md:justify-between items-center">
 
       <div className="absolute right-[-140px] z-0 hidden lg:block pointer-events-none ">
         <Image

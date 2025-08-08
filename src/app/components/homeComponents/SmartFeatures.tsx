@@ -5,6 +5,15 @@ import Image from "next/image";
 
 const SmartFeatures: React.FC = () => {
   return (
+    <div className="relative">
+   <div className="absolute lg:right-[-100px] md:right-[-80px] sm:right-[-50px]   top-[-400px] z-50 hidden lg:block pointer-events-none ">
+              <Image
+                src="/Leftcolor.png"
+                alt="Decorative Right Glow"
+                width={700}
+                height={504}
+              />
+            </div>
     <section className="lg:py-[150px] bg-white md:py-[100px] py-[64px]  w-[90%] md:w-[87%] mx-auto relative overflow-hidden ">
       <div className=" mx-auto text-center mb-12 max-w-[550px]">
         <h1 className="text-2xl lg:text-5xl md:text-[36px] font-bold text-gray-800">
@@ -16,6 +25,7 @@ const SmartFeatures: React.FC = () => {
           together to help you grow.
         </p>
       </div>
+   
       <div className="flex md:w-[87%] w-full ml-auto justify-center items-center gap-8 md:gap-12">
         <div className="flex h-[267px] md:h-[504px] rounded-md overflow-visible shadow-lg">
           <div className="relative w-[149px] md:w-[240px]  bg-[#0d2e7e] h-full rounded-tl-[20px]">
@@ -56,6 +66,7 @@ const SmartFeatures: React.FC = () => {
         </div>
       </div>
     </section>
+              </div>
   );
 };
 

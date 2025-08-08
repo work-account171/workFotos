@@ -52,7 +52,7 @@ const features: Feature[] = [
 
 const WorkFotosFeatures: React.FC = () => {
   return (
-    <section className="w-full bg-white lg:pb-[150px] md:pb-[100px] pb-[64px]">
+    <section className="relative w-full bg-white lg:pb-[150px] md:pb-[100px] pb-[64px]">
       <div className="max-w-[1240px] w-[87%] mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="flex-1 max-w-[510px] w-full">
           <span className="inline-flex items-center gap-2 px-4 py-1 text-sm font-medium bg-[#1e3a8a] text-white rounded-full mb-4">
@@ -74,7 +74,23 @@ const WorkFotosFeatures: React.FC = () => {
             everything organized and client-ready.
           </p>
         </div>
-
+   <div className="absolute lg:right-[-100px] md:right-[-80px] sm:right-[-50px]   top-[-200px] z-0 hidden lg:block pointer-events-none ">
+              <Image
+                src="/Leftcolor.png"
+                alt="Decorative Right Glow"
+                width={900}
+                height={504}
+              />
+            </div>
+               <div className="absolute left-0  -translate-y-[30%] z-50">
+                           <Image
+                             src="/right-color.png"
+                             alt="Decorative Left Glow"
+                             width={669}
+                             height={504}
+                             className="pointer-events-none"
+                           />
+                         </div>
         <div className="grid md:grid-cols-2 grid-cols-1 sm:grid-cols-2 md:gap-5 lg:gap-6 gap-4 flex-1">
           {features.map((feature, index) => (
             <div

@@ -12,10 +12,10 @@ const HeroPricing: React.FC = () => {
         bg-[url('/pricingimg.png')] 
         bg-cover bg-center 
         text-white 
-        pt-24 sm:pt-28 md:pt-40 
-        pb-20 sm:pb-20 lg:pb-36 
+        pt-24 sm:pt-20 md:pt-40 
+        pb-20 sm:pb-60 lg:pb-36 
         text-center 
-        min-h-[100vh] sm:min-h-[70vh] lg:min-h-[600px]
+        min-h-[430px] sm:min-h-[300px] lg:min-h-[600px]
         mb-150
         bg-white
       "
@@ -32,7 +32,7 @@ const HeroPricing: React.FC = () => {
       </div>
 
      
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="max-w-4xl mx-auto px-4  lg:px-8 relative z-10  ">
         <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold mb-6">
           Smart Plans. WorkFotos Results.
         </h2>
