@@ -17,7 +17,7 @@ const SmartFeatures: React.FC = () => {
         </p>
       </div>
       <div className="flex md:w-[87%] w-full ml-auto justify-center items-center gap-8 md:gap-12">
-        <div className="flex h-[297px] md:h-[504px] rounded-md overflow-visible shadow-lg">
+        <div className="flex h-[267px] md:h-[504px] rounded-md overflow-visible shadow-lg">
           <div className="relative w-[149px] md:w-[240px]  bg-[#0d2e7e] h-full rounded-tl-[20px]">
            
             <div className="absolute top-4 left-4">
