@@ -64,33 +64,33 @@ const WorkFotosFeatures: React.FC = () => {
             />
             Smart Features
           </span>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="md:text-3xl text-xl/6 lg:text-4xl font-bold text-gray-900 md:mb-4 mb-2">
             WorkFotos Features That{" "}
             <span className="text-blue-600">Simplify & Scale</span> Your
             Workflow
           </h2>
-          <p className="text-gray-600 mb-6">
+          <p className="text-gray-600 md:text-xl text-sm md:mb-6 mb-0">
             Power up your project management with photo-first tools that keep
             everything organized and client-ready.
           </p>
         </div>
 
-        <div className="grid grid-cols-2 sm:grid-cols-2 gap-6 flex-1">
+        <div className="grid md:grid-cols-2 grid-cols-1 sm:grid-cols-2 md:gap-5 lg:gap-6 gap-4 flex-1">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="relative group bg-white border border-gray-200 rounded-[12px] p-4 h-[220 px] md:h-[181px] transition-all duration-300 hover:border-t-[#1e3a8a] hover:border-b-8 hover:border-b-[#1e3a8a] hover:border-l-[#1e3a8a] hover:border-r-[#1e3a8a]"
+              className="relative group bg-white border border-gray-200  rounded-[12px] p-4 h-[220 px] md:h-[181px] transition-all duration-300 hover:border-t-[#1e3a8a] hover:border-b-8 hover:border-b-[#1e3a8a] hover:border-l-[#1e3a8a] hover:border-r-[#1e3a8a]"
             >
-              <div className="mb-12">
+              <div className="md:mb-12 mb-5">
                 <Image
                   src={feature.iconPath}
                   alt={feature.title}
                   width={28}
                   height={28}
-                  className="object-contain"
+                  className="object-contain lg:w-[28px] lg:h-[28px]"
                 />
               </div>
-              <h3 className="font-semibold text-gray-900 text-lg mb-1">
+              <h3 className="font-semibold text-gray-900 md:text-lg text-[16px] mb-1">
                 {feature.title}
               </h3>
               <p className="text-gray-600 text-sm">{feature.description}</p>
