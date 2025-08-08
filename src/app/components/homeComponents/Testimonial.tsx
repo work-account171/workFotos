@@ -21,7 +21,7 @@ const Testimonial: React.FC<testimonialProps> = ({
 
         <div className="flex flex-col lg:gap-4 gap-3">
           <Image src={quote} alt="quote image" width={54} height={54} className="lg:w-[54px] lg:h-[54px] md:w-[44px] md:h-[44px] w-[34px] h-[34px]" />
-          <h3 className="lg:text-xl md:text-[16px] text-sm">{saying}</h3>
+          <h3 className="lg:text-xl md:text-[16px] text-sm w-full">{saying}</h3>
         </div>
         <div className="flex justify-center items-center lg:gap-4 gap-3.5">
             <Image src={authorImg} width={58} height={58} alt="author image" className="lg:w-[58px] lg:h-[58px] md:h-[50px] md:w-[50px] w-[42px] h-[42px] rounded-full"/>
