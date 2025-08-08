@@ -3,6 +3,8 @@ import React from "react";
 import Image from "next/image";
 import Testimonial from "./Testimonial";
 import author1Img from "@/../public/author1img.svg";
+import author2Img from "@/../public/author2img.svg";
+import author3Img from "@/../public/author3img.svg";
 import prevArrow from "@/../public/prev-arrow.svg";
 import nextArrow from "@/../public/next-arrow.svg";
 import { useRef } from "react";
@@ -88,18 +90,18 @@ const handlePrev = () => {
                 role="Head of Talent Acquisition"
               />
               <Testimonial
-                saying="WorkFotos has completely simplified how we organize and access our photo archives. The folder system is intuitive and sharing albums with clients is now effortless."
-                author="Jessica M.
+                saying="We need a reliable cloud solution for storing thousands of project photos that WorkFotos did. It&apos;s fast, easy to use and keeps everything perfectly organized."
+                author="Daniel K.
 "
-                authorImg={author1Img}
-                role="Head of Talent Acquisition"
+                authorImg={author2Img}
+                role="Project Manager"
               />
               <Testimonial
-                saying="WorkFotos has completely simplified how we organize and access our photo archives. The folder system is intuitive and sharing albums with clients is now effortless."
-                author="Jessica M.
+                saying="No more digging through hard drives or shared folders. Workfotos lets us keep pur visual content neat, searchable, and secure."
+                author="Priya S.
 "
-                authorImg={author1Img}
-                role="Head of Talent Acquisition"
+                authorImg={author3Img}
+                role="Marketing Coordinator "
               />
             </div>
           </div>
