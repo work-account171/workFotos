@@ -79,7 +79,7 @@ const handlePrev = () => {
 
           {/* Testimonial Cards Container */}
           <div className="overflow-hidden rounded-2xl mx-auto w-[90%] ">
-            <div ref={scrollRef} className="flex overflow-x-scroll  snap-x snap-mandatory  justify-start hide-scrollbar  items-center  gap-6 transition-transform duration-500 ease-in-out">
+            <div ref={scrollRef} className="flex lg:overflow-x-scroll overflow-x-hidden  snap-x snap-mandatory  justify-start hide-scrollbar  items-center  gap-6 transition-transform duration-500 ease-in-out">
               <Testimonial
                 saying="WorkFotos has completely simplified how we organize and access our photo archives. The folder system is intuitive and sharing albums with clients is now effortless."
                 author="Jessica M.
