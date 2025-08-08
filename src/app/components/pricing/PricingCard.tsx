@@ -17,11 +17,11 @@ const features = [
 
 const PricingCard: React.FC = () => {
   return (
-    <div className="absolute inset-x-0 -bottom-[60%] sm:-bottom-[70%] lg:-bottom-[85%] flex justify-center px-4 ">
+    <div className="absolute inset-x-0 -bottom-[142%] sm:-bottom-[100%] lg:-bottom-[85%] flex justify-center px-4 ">
       <div
         className="
           bg-white text-gray-900 rounded-xl shadow-sm
-          w-full max-w-md sm:max-w-sm lg:w-96
+           w-90 sm:max-w-sm= lg:w-96
           h-auto lg:h-[720px]
           overflow-hidden
         "

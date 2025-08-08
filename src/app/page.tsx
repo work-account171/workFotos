@@ -1,5 +1,5 @@
 
-import FaqsSection from "./components/FaqsSection";
+import FaqsHome from "./components/homeComponents/FaqsHome";
 import HeroSection from "./components/homeComponents/HeroSection";
 import HowitWorks from "./components/homeComponents/HowitWorks";
 import TestimonialSlider from "./components/homeComponents/RealStories";
@@ -16,7 +16,7 @@ export default function Home() {
    <SmartFeatures/>
    <WorkFotosFeatures/>
    <TestimonialSlider/>
-   <FaqsSection imgSrc={faqImage}/>
+   <FaqsHome imgSrc={faqImage}/>
    </div>
  
 

@@ -7,7 +7,7 @@ const page = () => {
   return (
     <div>
     <HeroPricing/>
-       <FaqsSectionpricing imgSrc={faqImgPri}/>
+    <FaqsSectionpricing imgSrc={faqImgPri}/>
     </div>
   )
 }

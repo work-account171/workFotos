@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 const HowitWorks: React.FC = () => {
   return (
-    <section className='bg-white'>
+    <section className='relative bg-white'>
       <div className="md:w-[87%] w-[90%] overflow-hidden max-w-[1240px] mx-auto pt-[64px] md:pt-[100px] lg:pt-[150px]  flex flex-col items-center text-center lg:gap-[64px] md:gap-[48px] gap-[28px]">
        
         <div className="flex flex-col lg:gap-6 md:gap-5 gap-4">
@@ -17,7 +17,15 @@ const HowitWorks: React.FC = () => {
           </h2>
         </div>
 
-       
+       <div className="absolute left-0  -translate-y-[30%] z-50">
+               <Image
+                 src="/right-color.png"
+                 alt="Decorative Left Glow"
+                 width={669}
+                 height={504}
+                 className="pointer-events-none"
+               />
+             </div>
         <div className="flex flex-col  md:flex-row items-center w-full justify-between gap-6  group">
          {/* div 1 */}
           <div className="relative w-full flex justify-center items-center  md:w-[47%] ">

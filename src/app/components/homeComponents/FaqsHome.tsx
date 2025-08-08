@@ -1,12 +1,13 @@
 import React from "react";
 import Image, { StaticImageData } from "next/image";
-import Faqsss from "./Faqsss";
+
+import FaqsContent from "./FaqsContent";
 
 type FaqsSectionProps = {
   imgSrc: StaticImageData;
 };
 
-const FaqsSection: React.FC<FaqsSectionProps> = ({ imgSrc }) => {
+const FaqsHome: React.FC<FaqsSectionProps> = ({ imgSrc }) => {
   return (
     <>
       <div className="m-auto md:w-[87%] overflow-hidden w-[90%] max-w-[1240px] lg:pb-[150px] md:pb-[100px] pb-16 flex justify-center md:justify-between items-center">
@@ -33,7 +34,7 @@ const FaqsSection: React.FC<FaqsSectionProps> = ({ imgSrc }) => {
               className="pointer-events-none"
             />
           </div>
-          <Faqsss />
+         <FaqsContent/>
         </div>
         <div className="md:w-[45%] h-full md:block hidden ">
           <Image
@@ -49,4 +50,4 @@ const FaqsSection: React.FC<FaqsSectionProps> = ({ imgSrc }) => {
   );
 };
 
-export default FaqsSection;
+export default FaqsHome;
